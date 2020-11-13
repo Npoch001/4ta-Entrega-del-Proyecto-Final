@@ -1,0 +1,177 @@
+/*-----General-----*/
+@media screen and (max-width: 600px) {
+  .menuItem {
+    transform: scale(0.75, 0.75); }
+  #map {
+    transform: scale(0.75, 0.75); } }
+
+.menuItem {
+  display: inline-block;
+  position: relative;
+  transition: 0.3s ease;
+  background: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  margin: 0 20px; }
+  .menuItem:hover {
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000; }
+
+#logoEnana {
+  height: 250px;
+  width: 100%;
+  opacity: 50%; }
+
+#map {
+  display: grid;
+  color: #808080;
+  text-align: right;
+  width: 100%;
+  height: 150px;
+  grid-template-areas: "mapFrame" "direccion";
+  grid-template-rows: 210px 10px;
+  justify-content: end; }
+  #map p {
+    width: 200px;
+    grid-area: direccion; }
+  #map iframe {
+    width: 200px;
+    height: 150px;
+    grid-area: mapFrame; }
+
+/*-----Index-----*/
+@media screen and (max-width: 600px) {
+  #bienvenidos {
+    font-size: 75%; }
+  #tituloPrincipal {
+    font-size: 75%;
+    width: 400px; }
+  #indexFormat {
+    align-content: center;
+    display: grid;
+    grid-template-areas: "productos destacados";
+    font-size: 50%;
+    grid-template-columns: 50% 50%; }
+  aside {
+    transform: scale(0.5, 0.5); } }
+
+#bienvenidos {
+  color: #87ceeb;
+  text-align: center;
+  font-family: Sansita Swashed, "Sans-serif";
+  animation-duration: 3s;
+  animation-name: aparecerPrincipal; }
+
+#tituloPrincipal {
+  color: #000000;
+  text-align: center;
+  font-family: Sansita Swashed, "Sans-serif";
+  font-style: bold;
+  animation-duration: 3s;
+  animation-name: aparecerPrincipal; }
+
+@keyframes aparecerPrincipal {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+#productosIndex {
+  color: #a52a2a;
+  text-align: left; }
+  #productosIndex div {
+    font-size: 150%;
+    font-weight: bold; }
+
+#destacados {
+  text-align: right; }
+
+#indexFormat {
+  display: grid;
+  grid-template-areas: "productos destacados";
+  justify-content: space-around;
+  margin-top: 50px; }
+
+section {
+  grid-area: productos;
+  justify-self: center; }
+
+aside {
+  grid-area: destacados;
+  justify-self: center; }
+
+.carrusel {
+  width: 286px; }
+
+/*-----Productos-----*/
+@media screen and (max-width: 600px) {
+  #productosFormat {
+    width: 255px; }
+    #productosFormat .productos {
+      height: 150px;
+      width: 255px;
+      font-size: 50%; } }
+
+.productos {
+  height: 250px; }
+
+#productosFormat {
+  display: grid;
+  justify-content: evenly; }
+
+/*-----Nosotros-----*/
+@media screen and (max-width: 600px) {
+  #nosotrosInfo {
+    font-size: 100%; } }
+
+@media screen and (min-width: 600px) {
+  #nosotrosInfo {
+    font-size: 150%; } }
+
+#nosotrosInfo {
+  font-family: 'Alice', serif;
+  text-align: center;
+  background-image: linear-gradient(to right, #4c4cc77a, #add8e6 25%, #f0e9e9 50%, #add8e6 75%, #4c4cc77a 100%);
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  padding-left: 80px;
+  padding-right: 80px; }
+
+/*-----Contacto-----*/
+#contactoForm {
+  width: 355px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto; }
+
+#wp {
+  text-align: center; }
+
+/*-----Carrito-----*/
+#carrito {
+  text-align: center; }
+
+/*-----FAQ-----*/
+#faq {
+  color: #800080;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-style: solid;
+  border-color: #000000;
+  width: 60%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.pregunta {
+  color: #add8e6;
+  background-color: #000000;
+  font-weight: bold; }
+
+.respuesta {
+  color: #800080; }
