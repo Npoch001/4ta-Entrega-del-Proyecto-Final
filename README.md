@@ -7,6 +7,10 @@ El proyecto cuenta con animaciones y transformaciones tanto de imagenes como de 
 
 Al mismo tiempo, se activo la "github-page" para la visualización del sitio.
 
+15/11/2020
+
+Se crea el archivo README en blanco.
+
 19/11/2020
 
 Se suben los wireframes del Proyecto, y cambios en el html de "Contacto".
